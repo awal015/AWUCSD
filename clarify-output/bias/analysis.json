@@ -1,0 +1,166 @@
+{
+    "version": "1.0",
+    "explanations": {
+        "kernel_shap": {
+            "label0": {
+                "global_shap_values": {
+                    "esent": 0.36277208046737996,
+                    "eopenrate": 0.024842819081359026,
+                    "eclickrate": 0.01418937376532238,
+                    "avgorder": 0.01390112890694497,
+                    "ordfreq": 0.007524243313563897,
+                    "paperless": 0.018924517739515753,
+                    "refill": 0.008064731746857077,
+                    "doorstep": 0.006854124377560735,
+                    "first_last_days_diff": 0.020873521258724406,
+                    "created_first_days_diff": 0.012894028608791701,
+                    "favday_Friday": 0.006364939764353422,
+                    "favday_Monday": 0.006014561213660525,
+                    "favday_Saturday": 0.0060174164760804045,
+                    "favday_Sunday": 0.006749825072476618,
+                    "favday_Thursday": 0.006112712343611476,
+                    "favday_Tuesday": 0.005996511668462954,
+                    "favday_Wednesday": 0.005991879860495783,
+                    "city_BLR": 0.006644038987663212,
+                    "city_BOM": 0.006343401307383723,
+                    "city_DEL": 0.0067849150019699605,
+                    "city_MAA": 0.00697510321681519
+                },
+                "expected_value": 0.6325938129884889
+            }
+        }
+    },
+    "post_training_bias_metrics": {
+        "label": "target",
+        "facets": {
+            "doorstep": [
+                {
+                    "value_or_threshold": "(0.0, 1.0]",
+                    "metrics": [
+                        {
+                            "name": "AD",
+                            "description": "Accuracy Difference (AD)",
+                            "value": -0.007863519130921204
+                        },
+                        {
+                            "name": "CDDPL",
+                            "description": "Conditional Demographic Disparity in Predicted Labels (CDDPL)",
+                            "value": null,
+                            "error": "Group variable is empty or not provided"
+                        },
+                        {
+                            "name": "DAR",
+                            "description": "Difference in Acceptance Rates (DAR)",
+                            "value": -0.01156807850845687
+                        },
+                        {
+                            "name": "DCA",
+                            "description": "Difference in Conditional Acceptance (DCA)",
+                            "value": -0.007984600094560812
+                        },
+                        {
+                            "name": "DCR",
+                            "description": "Difference in Conditional Rejection (DCR)",
+                            "value": 0.19232526776857672
+                        },
+                        {
+                            "name": "DI",
+                            "description": "Disparate Impact (DI)",
+                            "value": 1.163252535654902
+                        },
+                        {
+                            "name": "DPPL",
+                            "description": "Difference in Positive Proportions in Predicted Labels (DPPL)",
+                            "value": -0.13249732526277502
+                        },
+                        {
+                            "name": "DRR",
+                            "description": "Difference in Rejection Rates (DRR)",
+                            "value": -0.08172932247026965
+                        },
+                        {
+                            "name": "FT",
+                            "description": "Flip Test (FT)",
+                            "value": -0.006075334143377886
+                        },
+                        {
+                            "name": "GE",
+                            "description": "Generalized Entropy (GE)",
+                            "value": 0.01857172263580912
+                        },
+                        {
+                            "name": "RD",
+                            "description": "Recall Difference (RD)",
+                            "value": -0.0037436105568920963
+                        },
+                        {
+                            "name": "SD",
+                            "description": "Specificity Difference (SD)",
+                            "value": -0.1887966804979253
+                        },
+                        {
+                            "name": "TE",
+                            "description": "Treatment Equality (TE)",
+                            "value": -0.00303030303030305
+                        }
+                    ]
+                }
+            ]
+        },
+        "label_value_or_threshold": "1"
+    },
+    "pre_training_bias_metrics": {
+        "label": "target",
+        "facets": {
+            "doorstep": [
+                {
+                    "value_or_threshold": "(0.0, 1.0]",
+                    "metrics": [
+                        {
+                            "name": "CDDL",
+                            "description": "Conditional Demographic Disparity in Labels (CDDL)",
+                            "value": null,
+                            "error": "Group variable is empty or not provided"
+                        },
+                        {
+                            "name": "CI",
+                            "description": "Class Imbalance (CI)",
+                            "value": 0.9235485369252207
+                        },
+                        {
+                            "name": "DPL",
+                            "description": "Difference in Positive Proportions in Labels (DPL)",
+                            "value": -0.1365903641626932
+                        },
+                        {
+                            "name": "JS",
+                            "description": "Jensen-Shannon Divergence (JS)",
+                            "value": 0.019948037902751837
+                        },
+                        {
+                            "name": "KL",
+                            "description": "Kullback-Liebler Divergence (KL)",
+                            "value": 0.0951382516806108
+                        },
+                        {
+                            "name": "KS",
+                            "description": "Kolmogorov-Smirnov Distance (KS)",
+                            "value": 0.13659036416269327
+                        },
+                        {
+                            "name": "LP",
+                            "description": "L-p Norm (LP)",
+                            "value": 0.19316794548836075
+                        },
+                        {
+                            "name": "TVD",
+                            "description": "Total Variation Distance (TVD)",
+                            "value": 0.13659036416269324
+                        }
+                    ]
+                }
+            ]
+        },
+        "label_value_or_threshold": "1"
+    }
+}
